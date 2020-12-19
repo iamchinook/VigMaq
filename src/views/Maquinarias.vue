@@ -18,7 +18,7 @@
         <v-col cols="12" sm="4"> </v-col>
       </v-row>
     </v-container>
-    <!-- PC -->
+    <!-- DESKTOP -->
     <v-container
       style="height: 110%; width: 50%; float: left"
       fluid
@@ -120,7 +120,7 @@
         </v-list-group>
       </v-list>
     </v-container>
-    <!-- cel -->
+    <!-- MOBILE -->
 
     <v-container
       style="height: 110%; width: 80%; float: left"

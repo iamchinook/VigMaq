@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <!-- cel -->
+    <!-- MOBILE -->
 
     <v-toolbar
       height="120px"
@@ -26,7 +26,7 @@
         </v-tabs>
       </template>
     </v-toolbar>
-    <!-- pc -->
+    <!-- DESKTOP -->
 
     <v-toolbar
       height="200px"
@@ -50,7 +50,7 @@
     <router-view />
 
     <template>
-      <!-- cel -->
+    <!-- MOBILE -->
 
       <v-toolbar
         height="60%"
@@ -83,7 +83,7 @@
           </v-card-text>
         </v-col>
       </v-toolbar>
-      <!-- pc -->
+    <!-- DESKTOP -->
 
       <v-toolbar
         height="120%"

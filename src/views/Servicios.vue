@@ -3,6 +3,8 @@
     <v-container>
       <v-row class="text-center">
         <v-col cols="12">
+              <!-- MOBILE -->
+
           <v-img
             :src="require('../assets/logo3.png')"
             class="my-3"
@@ -10,6 +12,8 @@
             height="100"
             v-if="$vuetify.breakpoint.mobile == true"
           />
+                        <!-- DESKTOP -->
+
           <v-img
             :src="require('../assets/logo3.png')"
             class="my-3"
@@ -18,6 +22,7 @@
             v-if="$vuetify.breakpoint.mobile == false"
           />
         </v-col>
+                        <!-- MOBILE -->
 
         <v-col class="mb-4" v-if="$vuetify.breakpoint.mobile == true">
           <h1 class="display-1 font-weight-bold mb-1">Vigolo Maquinarias</h1>
@@ -41,6 +46,7 @@
           </ul>
           <br /><br />
         </v-col>
+                        <!-- DESKTOP -->
 
         <v-col class="mb-4" v-if="$vuetify.breakpoint.mobile == false">
           <h1 class="display-2 font-weight-bold mb-3">Vigolo Maquinarias</h1>
