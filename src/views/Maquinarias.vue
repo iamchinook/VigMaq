@@ -151,18 +151,19 @@
               v-on:click="showOverlay(maquina, index)"
               style="margin-bottom: 15px; font-size: xx-small; width: 100%"
             ></v-btn>
-            <v-overlay :value="maquina.overlay">
+            <v-overlay :value="maquina.overlay" :height="1000">
               <div>
                 <v-card
                   elevation="24"
                   class="mx-auto"
-                  :width="470"
+                  :width="400"
                   :height="600"
                 >
                   <v-btn
                     color="error"
                     v-on:click="hideOverlay(maquina, index)"
                     small
+                    :width="25"
                     elevation="18"
                     style="float: right"
                   >
@@ -189,8 +190,8 @@
                         <v-list-item-title
                           style="
                             text-align: center;
-                            margin-bottom: 15px;
-                            font-size: small;
+                            margin-bottom: 8px;
+                            font-size: x-small;
                           "
                           >{{ maquina.title }}</v-list-item-title
                         >
@@ -202,8 +203,8 @@
                             >
                               <p
                                 style="
-                                  font-size: smaller;
-                                  margin-bottom: 10px !important;
+                                  font-size: xx-small;
+                                  margin-bottom: 2px !important;
                                 "
                               >
                                 {{ item }}
@@ -470,7 +471,7 @@ export default {
         overlay: false
       },
       {
-        title: "Escuadradora",
+        title: "Escuadradora C3200 L",
         tipo: "Escuadradoras",
         asset: require("../assets/Escuadradoras/TT 6132 b.png"),
         info: [
@@ -485,15 +486,35 @@ export default {
       {
         title: "Escuadradora C3200M",
         tipo: "Escuadradoras",
-        //asset: require("../assets/Escuadradoras/TT 6132 b.png"),
-        info: [],
+        asset: require("../assets/Escuadradoras/3200M.png"),
+        info: [
+          "Corte útil 3.200mm",
+          "Inclinación 0 - 45°",
+          "Indicador de Grados Digital",
+          "Motor Principal 5,5 HP",
+          "Incisor 0,75 HP",
+          "Carro tipo Alternof",
+          "Capacidad máxima Corte a Contra Guia 1.300 mm",
+          "Sierra principal hasta 300 mm"
+        ],
         overlay: false
       },
       {
         title: "Escuadradora C3200H",
         tipo: "Escuadradoras",
-        //asset: require("../assets/Escuadradoras/TT 6132 b.png"),
-        info: [],
+        asset: require("../assets/Escuadradoras/C3200P.png"),
+        info: [
+          "Corte útil 3.200mm",
+          "Inclinación 0 - 45°",
+          "Indicador de Grados Digital",
+          "Motor Principal 7,5 HP",
+          "Incisor 0,75 HP",
+          "Guia de Subida y bajada eléctrica",
+          "Carro tipo Alternof",
+          "Capacidad máxima Corte a Contra Guia 1.300 mm",
+          "Sierra principal hasta 350 mm",
+          "Peso 850 kg"
+        ],
         overlay: false
       },
       {
