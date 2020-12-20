@@ -6,11 +6,11 @@
       height="120px"
       dark
       prominent
-      :src="require('../src/assets/vbanner2.png')"
+      :src="require('../src/assets/header.png')"
       v-if="$vuetify.breakpoint.mobile == true"
     >
       <template v-slot:extension>
-        <v-tabs align-with-title>
+        <v-tabs centered>
           <router-link to="/"
             ><v-tab style="font-size: small"> Inicio </v-tab>
           </router-link>
@@ -25,18 +25,24 @@
           >
         </v-tabs>
       </template>
+      <v-img
+            :src="require('../src/assets/logo4.png')"
+            class="my-3"
+            contain
+            height="80"
+          />
     </v-toolbar>
     <!-- DESKTOP -->
 
     <v-toolbar
-      height="200px"
+      height="150px"
       dark
       prominent
-      :src="require('../src/assets/vbanner.png')"
+      :src="require('../src/assets/header.png')"
       v-if="$vuetify.breakpoint.mobile == false"
     >
       <template v-slot:extension>
-        <v-tabs align-with-title>
+        <v-tabs centered>
           <router-link to="/"><v-tab> Inicio </v-tab> </router-link>
           <router-link to="/maquinarias"
             ><v-tab> Maquinarias </v-tab></router-link
@@ -45,6 +51,12 @@
           <router-link to="/contacto"><v-tab> Contacto </v-tab></router-link>
         </v-tabs>
       </template>
+      <v-img
+            :src="require('../src/assets/logo4.png')"
+            class="my-3"
+            contain
+            height="100"
+          />
     </v-toolbar>
 
     <router-view />
@@ -83,7 +95,7 @@
           </v-card-text>
         </v-col>
       </v-toolbar>
-    <!-- DESKTOP -->
+    <!-- DESKTOP  -->
 
       <v-toolbar
         height="120%"

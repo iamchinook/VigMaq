@@ -11,6 +11,8 @@
 
 # cd vigmaq
 
+# npm install --save vue-router
+
 # vue add vuetify
 
 # npm run serve
