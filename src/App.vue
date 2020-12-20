@@ -3,7 +3,7 @@
     <!-- MOBILE -->
 
     <v-toolbar
-      height="120px"
+      height="100px"
       dark
       prominent
       :src="require('../src/assets/header.png')"

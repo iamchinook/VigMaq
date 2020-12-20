@@ -27,23 +27,23 @@
         <v-col class="mb-4" v-if="$vuetify.breakpoint.mobile == true">
           <h1 class="display-1 font-weight-bold mb-1">Vigolo Maquinarias</h1>
           <br />
-          <ul>
-            <li class="subheading font-weight-regular" style="font-size: small">
+          
+            <p class="subheading font-weight-regular" style="font-size: small">
               Venta de Máquinas Nuevas y Usadas
-            </li>
-            <li class="subheading font-weight-regular" style="font-size: small">
+            </p>
+            <p class="subheading font-weight-regular" style="font-size: small">
               Adquisición de Máquinas Usadas
-            </li>
-            <li class="subheading font-weight-regular" style="font-size: small">
+            </p>
+            <p class="subheading font-weight-regular" style="font-size: small">
               Garantía y Servicio Post-Venta
-            </li>
-            <li class="subheading font-weight-regular" style="font-size: small">
+            </p>
+            <p class="subheading font-weight-regular" style="font-size: small">
               Reparación de Máquinarias
-            </li>
-            <li class="subheading font-weight-regular" style="font-size: small">
+            </p>
+            <p class="subheading font-weight-regular" style="font-size: small">
               Tasación de Máquinarias
-            </li>
-          </ul>
+            </p>
+          
           <br /><br />
         </v-col>
                         <!-- DESKTOP -->
@@ -51,23 +51,23 @@
         <v-col class="mb-4" v-if="$vuetify.breakpoint.mobile == false">
           <h1 class="display-2 font-weight-bold mb-3">Vigolo Maquinarias</h1>
           <br />
-          <ul>
-            <li class="subheading font-weight-regular">
+          
+            <p class="subheading font-weight-regular">
               Venta de Máquinas Nuevas y Usadas
-            </li>
-            <li class="subheading font-weight-regular">
+            </p>
+            <p class="subheading font-weight-regular">
               Adquisición de Máquinas Usadas
-            </li>
-            <li class="subheading font-weight-regular">
+            </p>
+            <p class="subheading font-weight-regular">
               Garantía y Servicio Post-Venta
-            </li>
-            <li class="subheading font-weight-regular">
+            </p>
+            <p class="subheading font-weight-regular">
               Reparación de Máquinarias
-            </li>
-            <li class="subheading font-weight-regular">
+            </p>
+            <p class="subheading font-weight-regular">
               Tasación de Máquinarias
-            </li>
-          </ul>
+            </p>
+         
           <br /><br />
         </v-col>
       </v-row>

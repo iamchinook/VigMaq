@@ -2,7 +2,7 @@
   <div style="width: 100%; height: 100%">
     <v-container
       fluid
-      style="height: 160%; background-color: #4f4e4e; width: 20%; float: left"
+      style="height: 170%; background-color: #4f4e4e; width: 20%; float: left"
     >
       <v-row no-gutters>
         <v-col cols="12" sm="4"> </v-col>
@@ -50,15 +50,12 @@
             ></v-btn>
             <v-overlay :value="maquina.overlay">
               <v-btn
-                color="error"
-                v-on:click="hideOverlay(maquina, index)"
-                small
-                elevation="18"
-                class="mx-2"
-                dark
-                fab
-                outlined
-              >
+                  color="error"
+                  v-on:click="hideOverlay(maquina, index)"
+                  small
+                  elevation="18"
+                  style="float: right"
+                >
                 <v-icon size="12px"> mdi-close </v-icon>
               </v-btn>
               <div>
@@ -159,7 +156,7 @@
                 <v-card
                   elevation="24"
                   class="mx-auto"
-                  :width="$vuetify.breakpoint.mobile ? 350 : 600"
+                  :width="470"
                   :height="600"
                 >
                   <v-btn
@@ -167,10 +164,6 @@
                     v-on:click="hideOverlay(maquina, index)"
                     small
                     elevation="18"
-                    class="mx-2"
-                    dark
-                    fab
-                    outlined
                     style="float: right"
                   >
                     <v-icon size="12px"> mdi-close </v-icon>
