@@ -49,22 +49,25 @@
               style="margin-bottom: 15px; font-size: x-small; width: 100%"
             ></v-btn>
             <v-overlay :value="maquina.overlay">
-              <v-btn
-                  color="error"
-                  v-on:click="hideOverlay(maquina, index)"
-                  small
-                  elevation="18"
-                  style="float: right"
-                >
-                <v-icon size="12px"> mdi-close </v-icon>
-              </v-btn>
               <div>
-                <v-card
+              <v-card
                   elevation="24"
                   class="mx-auto"
                   :width="$vuetify.breakpoint.mobile ? 450 : 600"
                   :height="$vuetify.breakpoint.mobile ? 750 : 800"
                 >
+              <v-btn
+                    color="error"
+                    v-on:click="hideOverlay(maquina, index)"
+                    small
+                    :width="25"
+                    elevation="18"
+                    style="float: right"
+                  >
+                    <v-icon size="20px"> mdi-close </v-icon>
+              </v-btn>
+              
+                
                   <v-system-bar lights-out></v-system-bar>
                   <v-carousel
                     :show-arrows="false"
